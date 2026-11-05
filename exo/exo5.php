@@ -45,7 +45,7 @@
 
  <?php
     // Votre code ici
-    date_default_timezone_set('Europe/Paris')
+    date_default_timezone_set('Europe/Paris');
     $mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 
     $jourSemaine = strtolower($tableau[date("N") - 1]);
