@@ -45,6 +45,15 @@
 
  <?php
     // Votre code ici
+    date_default_timezone_set('Europe/Paris')
+    $mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+
+    $jourSemaine = strtolower($tableau[date("N") - 1]);
+    $jourMois = date("j");
+    $nomMois = $mois[date("n") - 1];
+    $annee = date("Y");
+
+    echo "Nous sommes le $jourSemaine $jourMois $nomMois $annee";
     ?>
 
  <h2>Exercice 3 </h2>
@@ -61,7 +70,15 @@ $tab= [
 
  <?php
     // Votre code ici
+    $tab = [
+        "Dupont" => ["Paul", "Paris", 27],
+        "Schmoll" => ["Kirk", "Berlin", 35],
+        "Smith" => ["Stan", "Londres", 45]
+    ];
 
+    foreach ($tab as $nom => $infos) {
+        echo "$infos[0] $nom a $infos[2] ans et habite à $infos[1]<br>";
+    }
     ?>
 
 
